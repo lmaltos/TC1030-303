@@ -12,6 +12,14 @@ int main() {
     rect1.setLargo(5);
     rect1.setAncho(8);
     b = rect1.calcularArea();
-    cout << "El area es " << a << endl;
+
+    cout << "El area de rect es " << a << endl;
     cout << rect.str() << endl;
+    
+    cout << "El area de rect1 es " << b << endl;
+    cout << rect1.str() << endl;
+    
+    // Agregamos los getters
+    c = rect.getLargo();
+    d = rect.getAncho();
 }
