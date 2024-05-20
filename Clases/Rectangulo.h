@@ -7,6 +7,10 @@ class Rectangulo {
     double largo;
     double ancho;
   public:
+    Rectangulo();
+    Rectangulo(double);
+    Rectangulo(double,double);
+    ~Rectangulo(); // debe ser publico
     double calcularArea();
     void setLargo(double);
     void setAncho(double);

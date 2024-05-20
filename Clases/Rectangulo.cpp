@@ -1,4 +1,23 @@
 #include "Rectangulo.h"
+#include <iostream>
+
+Rectangulo::Rectangulo() {
+
+}
+
+Rectangulo::Rectangulo(double _lado){
+    largo = _lado;
+    ancho = _lado;
+}
+
+Rectangulo::Rectangulo(double _largo, double _ancho){
+    largo = _largo;
+    ancho = _ancho;
+}
+
+Rectangulo::~Rectangulo() {
+    std::cout << "Se ha destruido el rectangulo (" << largo << "," << ancho << ")" << std::endl;
+}
 
 double Rectangulo::calcularArea() {
     return largo * ancho;
