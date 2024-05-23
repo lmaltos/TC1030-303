@@ -20,13 +20,13 @@ int main2() {
     listaEstatica.push_back(&r);
     listaEstatica.push_back(&r1);
 
-    p = &fig;
+    p = &fig; // la direccion de memoria de fig, se almacena en el pointer p
     q = (int*)p;
     for (std::list<Shape*>::iterator it = listaEstatica.begin(); it != listaEstatica.end(); it++) {
         p = *it;
         std::cout << "p: " << p->draw() << std::endl;
     }
-    std::cout << "q: " << *q << std::endl;
+    std::cout << "q: " << *q << std::endl; // *q regresa el valor al que apunta el pointer q
 
 }
 
