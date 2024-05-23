@@ -11,6 +11,7 @@ class Circle : public Shape  {
     Circle();
     Circle(int,int,int);
     ~Circle();
+    std::string draw();
 };
 
 }

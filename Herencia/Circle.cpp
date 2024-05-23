@@ -18,4 +18,8 @@ Circle::Circle(int _x, int _y, int _r) : Shape(_x,_y) {
 Circle::~Circle(){
     std::cout << "Destructor ~Cicle()" << std::endl;
 }
+
+std::string Circle::draw() {
+    return "Soy un circulo";
+}
 }

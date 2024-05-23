@@ -10,8 +10,8 @@ class Shape {
   public:
     Shape();
     Shape(int,int);
-    ~Shape();
-    std::string draw();
+    virtual ~Shape();
+    virtual std::string draw();
 
     int getValueX();
     int getValueY();
