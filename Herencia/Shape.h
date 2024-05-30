@@ -11,7 +11,7 @@ class Shape {
     Shape();
     Shape(int,int);
     virtual ~Shape();
-    virtual std::string draw();
+    virtual std::string draw() = 0;
 
     int getValueX();
     int getValueY();

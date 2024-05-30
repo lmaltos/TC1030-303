@@ -18,9 +18,10 @@ Shape::~Shape() {
     std::cout << "Destructor de ~Shape()" << std::endl;
 }
 
+/* Se volvio virtual = 0
 std::string Shape::draw() {
     return "Soy una figura";
-}
+}*/
 
 int Shape::getValueX() {
     return x;
