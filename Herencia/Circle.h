@@ -12,6 +12,8 @@ class Circle : public Shape  {
     Circle(int,int,int);
     ~Circle();
     std::string draw();
+    void metodo1(int,double);
+    double calcularArea();
 };
 
 }

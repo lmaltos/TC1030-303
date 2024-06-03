@@ -22,4 +22,12 @@ Circle::~Circle(){
 std::string Circle::draw() {
     return "Soy un circulo";
 }
+
+void Circle::metodo1(int i,double d) {
+    std::cout << "Cicle::metodo1()" << std::endl;
+}
+
+double Circle::calcularArea() {
+    return r * r * 3.141592;
+}
 }

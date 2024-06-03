@@ -9,4 +9,6 @@ class Rectangle : public herencia::Shape {
     Rectangle(int,int);
     Rectangle(int,int,int,int);
     std::string draw();
+    void metodo1(int,double);
+    double calcularArea();
 };

@@ -1,6 +1,7 @@
 #include "Shape.h"
 #include "Circle.h"
 #include "Rectangle.h"
+#include "Cilinder.h"
 #include <list>
 
 using namespace herencia;
@@ -38,7 +39,8 @@ int main() {
     llenaLista(listaDinamica,50);
     for (std::list<Shape*>::iterator it = listaDinamica.begin(); it != listaDinamica.end(); it++) {
         p = *it;
-        std::cout << "p: " << p->draw() << std::endl;
+        p->metodo1(1,2.0);
+        std::cout << "p: " << p->draw() << "\tarea: " << p->calcularArea() << std::endl;
     }
     for (std::list<Shape*>::iterator it = listaDinamica.begin(); it != listaDinamica.end(); it++) {
         p = *it;
@@ -55,8 +57,10 @@ void llenaLista(std::list<Shape*> &listaDinamica, int n) {
         switch (a)
         {
         case 0:
-            //p = new Shape(rand() % 10, rand() % 10);
-            //break;
+            p = new Cilinder(rand() % 10, rand() % 10, rand() % 5, rand() % 15);
+            Cilinder *q = (Cilinder*)p; // casteo a cilindro explicito
+            q->calcularVolumen();
+            break;
         case 1:
             p = new Circle(rand() % 10, rand() % 10, rand() % 5);
             break;

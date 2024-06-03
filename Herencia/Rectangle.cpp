@@ -20,3 +20,11 @@ Rectangle::Rectangle(int x, int y, int _a, int _b)
 std::string Rectangle::draw() {
     return "Soy un rectangulo";
 }
+
+void Rectangle::metodo1(int i, double d) {
+    std::cout << "Rectangle::metodo1()" << std::endl;
+}
+
+double Rectangle::calcularArea() {
+    return a * b;
+}
